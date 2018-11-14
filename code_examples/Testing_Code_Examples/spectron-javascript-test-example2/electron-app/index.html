@@ -1,0 +1,27 @@
+<html>
+<body>
+    <style>
+    .mystyl{
+      color: red;
+      letter-spacing: 5px;  
+    }
+    </style>
+    <script>
+    function add()
+    {
+        var x = document.getElementById("aid").value;
+        var y = document.getElementById("bid").value;
+        var z = Number(x) + Number(y);
+
+        document.getElementById("cid").value = z;
+        //alert("a="+x+" b="+y);
+        console.log("a="+x+" b="+y+" z="+z);
+    }
+    </script>
+<h1 class="mystyl">Simple JS Example</h1><br>
+Enter value a: <input type="text" name="vala" id="aid" value="" /><br>
+Enter value b: <input type="text" name="valb" id="bid" value="" /><br>
+Result: <input type="text" name="valc" id="cid" value="" /><br>
+<button id="btnid" onClick="add()">Click Hereee</button>
+</body>
+</html>
