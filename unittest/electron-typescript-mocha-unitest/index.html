@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+	<script src="./dist/renderer.js">
+  </script>
+    <script>
+      function updateSize()
+      {
+        var content = document.getElementById("tid").value;
+        console.log("Texdt is: "+content);
+        var sz = getElementLengthh(content);
+        console.log("length is: "+sz);
+        document.getElementById("txtid").value = sz;
+        console.log("Doneeeeeeeeeeeeeeee");
+      }
+	  
+    // You can also require other files to run in this process
+  </script>
+  </head>
+  <body>
+    <h1>Hello World!</h1><br>
+    <input type="text" id="tid" value=""/><br>
+    <!-- All of the Node.js APIs are available in this renderer process. -->
+    We are using Node.js <script>document.write(process.versions.node)</script>,
+    Chromium <script>document.write(process.versions.chrome)</script>,
+    and Electron <script>document.write(process.versions.electron)</script>
+    <input type="text" id="txtid" value="" /><br>
+    <button id="bid" onClick="updateSize();">Click Here</button>
+  </body>
+
+
+</html>
